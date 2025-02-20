@@ -110,7 +110,7 @@ function App() {
        
         <div className="absolute inset-0 flex items-center justify-center text-white">
        
-          <div className="text-center px-4 max-w-4xl animate-fade-in">
+          <div className="text-center px-4 max-w-4xl animate-fade-in mt-10 md:mt-0">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Thrive & Flourish: Emotional and Mental Well-being for Special
               Needs Parents

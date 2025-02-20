@@ -11,12 +11,11 @@ const Navbar = () => {
     <nav className="bg-white shadow-md fixed h-24 w-full top-0 z-10">
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Logo */}
-        <Link to="/" className="">
-          <img src={Logo} className="w-full h-20 pb-2" />
-        </Link>
-
         {/* Desktop Menu */}
-        <div className="hidden md:flex">
+        <div className="flex">
+          <Link to="/" className="">
+            <img src={Logo} className="w-full h-20 pb-2" />
+          </Link>
           <Link to="/" className="">
             <img src={Logo2} className="w-full h-20 pb-2" />
           </Link>
