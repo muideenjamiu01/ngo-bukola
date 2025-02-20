@@ -23,14 +23,17 @@ import FounderReview from "./components/FounderReview";
 import Bonus from "./components/Bonus";
 import founderIMage from "./assests/founder.jpeg";
 import stressImage from "./assests/Stress-pana.svg"
+import libraryImage from "./assests/library.jpeg"
 import Navbar from "./components/Navbar"
 import { BrowserRouter } from "react-router-dom";
 
 
 const heroImages = [
+  libraryImage,
   "https://images.unsplash.com/photo-1516585427167-9f4af9627e6c?auto=format&fit=crop&q=80",
   "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&q=80",
   "https://images.unsplash.com/photo-1536640712-4d4c36ff0e4e?auto=format&fit=crop&q=80",
+ 
 ];
 
 function App() {
@@ -96,7 +99,7 @@ function App() {
               }`}
             >
               <img
-                src={img}
+                src={img === libraryImage ? libraryImage : img}
                 alt={`Slide ${index + 1}`}
                 className="w-full h-full object-cover"
               />
@@ -232,7 +235,7 @@ function App() {
               </h3>
               <ul className="space-y-3 text-gray-700">
                 <li>• How to shift from survival mode to thriving mode</li>
-                <li>• Emotional Freedom Techniques (EFT) for stress relief</li>
+                <li>• Different techniques for stress relief</li>
               </ul>
             </div>
           </div>
@@ -253,7 +256,7 @@ function App() {
             </div>
             <div>
               <h2 className="text-4xl font-happyMonkey font-bold mb-6 text-[#F97100]">
-                Meet Our Founder
+              Meet your Host
               </h2>
               <h3 className="text-2xl font-semibold mb-4">Bukola Ayinde</h3>
               <p className="text-gray-700 mb-6 leading-relaxed">
@@ -278,8 +281,7 @@ function App() {
                   <div>
                     <h4 className="font-semibold mb-1">Published Author</h4>
                     <p className="text-sm text-gray-600">
-                      Six books on disability awareness including "My Name is
-                      Nimi"
+                      Six books on disability awareness including a 30 day journal of her experience as a special needs mum titled, Naked and Not Ashamed.
                     </p>
                   </div>
                 </div>
@@ -319,7 +321,7 @@ function App() {
                   </li>
                   <li>
                     • Chairperson of Safe Schools for Children with Special
-                    Needs Committee
+                    Needs Committee, Lagos State.
                   </li>
                 </ul>
               </div>
