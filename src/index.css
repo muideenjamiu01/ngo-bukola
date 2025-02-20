@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
 
 /* Animations */
 @keyframes fadeIn {
@@ -16,6 +23,10 @@
 @keyframes scaleIn {
   from { transform: scale(0.9); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
 .animate-fade-in {

@@ -63,7 +63,7 @@ const FounderReview = () => {
             <div key={index} className='px-8'>
               <div className="bg-white p-6 rounded-lg shadow-md max-w-2xl mb-10 max-h-64">
                 <p className="text-gray-700 italic truncate-text">{testimonial.text}</p>
-                <h4 className="text-orange-500 mt-4 font-semibold">{testimonial.name}</h4>
+                <h4 className="text-orange-500 mt-4 font-semibold font-happyMonkey">{testimonial.name}</h4>
               </div>
             </div>
           ))}

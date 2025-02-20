@@ -23,6 +23,9 @@ import FounderReview from "./components/FounderReview";
 import Bonus from "./components/Bonus";
 import founderIMage from "./assests/founder.jpeg";
 import stressImage from "./assests/Stress-pana.svg"
+import Navbar from "./components/Navbar"
+import { BrowserRouter } from "react-router-dom";
+
 
 const heroImages = [
   "https://images.unsplash.com/photo-1516585427167-9f4af9627e6c?auto=format&fit=crop&q=80",
@@ -78,9 +81,12 @@ function App() {
   // }, [nextReview]);
 
   return (
+      <BrowserRouter>
     <div className="min-h-screen bg-white">
+      <Navbar />
       {/* Hero Section */}
       <div className="relative h-screen">
+       
         <div className="absolute inset-0 overflow-hidden">
           {heroImages.map((img, index) => (
             <div
@@ -98,14 +104,15 @@ function App() {
             </div>
           ))}
         </div>
-
+       
         <div className="absolute inset-0 flex items-center justify-center text-white">
+       
           <div className="text-center px-4 max-w-4xl animate-fade-in">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Thrive & Flourish: Emotional and Mental Well-being for Special
               Needs Parents
             </h1>
-            <p className="text-xl md:text-2xl mb-6 text-[#F97100] font-semibold">
+            <p className="text-xl font-happyMonkey md:text-2xl mb-6 text-[#F97100] font-semibold">
               Because You Deserve to Thrive, Not Just Survive!
             </p>
             <p className="text-lg mb-8">
@@ -113,7 +120,7 @@ function App() {
               exhausting, and emotionally draining. You love your child, but who
               takes care of YOU?
             </p>
-            <button className="bg-[#F97100] hover:bg-[#e66700] text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors animate-scale-in">
+            <button className="bg-[#F97100] font-happyMonkey  hover:bg-[#e66700] text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors animate-scale-in">
               Register Now - Limited Slots Available!
             </button>
           </div>
@@ -138,8 +145,8 @@ function App() {
               />
             </motion.div>
           </div>
-          <div className="md:w-1/2 mt-8 md:mt-0">
-            <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">
+          <div className="md:w-1/2 mt-8 md:mt-0 px-4 md:px-0">
+            <h2 className="text-3xl font-happyMonkey font-bold text-center md:text-left mb-8 text-gray-800">
               Do you often feel:
             </h2>
             <div className="flex gap-x-4 items-center mb-4">
@@ -179,7 +186,7 @@ function App() {
               </p>
             </div>
 
-            <p className="md-16 md:mt-20 text-sm md:text-lg font-semibold text-orange-500 italic text-center md:text-left">
+            <p className="md-16 font-happyMonkey md:mt-20 text-sm md:text-lg font-semibold text-orange-500 italic text-center md:text-left">
               If you answered yes to any of these, this training is for you! 🎯
             </p>
           </div>
@@ -189,13 +196,13 @@ function App() {
       {/* Modules */}
       <div className="py-20 bg-white reveal">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12 text-[#F97100]">
+          <h2 className="text-4xl font-happyMonkey font-bold text-center mb-12 text-[#F97100]">
             What You'll Learn in This Transformational Program
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-green-50 p-8 rounded-xl shadow-lg">
               <Heart className="w-12 h-12 text-[#F97100] mb-4" />
-              <h3 className="text-2xl font-bold mb-4">
+              <h3 className="text-2xl font-bold mb-4 font-happyMonkey">
                 Module 1: Understanding Your Emotional Journey
               </h3>
               <ul className="space-y-3 text-gray-700">
@@ -208,7 +215,7 @@ function App() {
             </div>
             <div className="bg-green-50 p-8 rounded-xl shadow-lg">
               <Brain className="w-12 h-12 text-[#F97100] mb-4" />
-              <h3 className="text-2xl font-bold mb-4">
+              <h3 className="text-2xl font-bold mb-4 font-happyMonkey">
                 Module 2: Managing Stress & Avoiding Burnout
               </h3>
               <ul className="space-y-3 text-gray-700">
@@ -220,7 +227,7 @@ function App() {
             </div>
             <div className="bg-green-50 p-8 rounded-xl shadow-lg">
               <Shield className="w-12 h-12 text-[#F97100] mb-4" />
-              <h3 className="text-2xl font-bold mb-4">
+              <h3 className="text-2xl font-bold mb-4 font-happyMonkey">
                 Module 3: Strengthening Your Mindset
               </h3>
               <ul className="space-y-3 text-gray-700">
@@ -245,7 +252,7 @@ function App() {
               />
             </div>
             <div>
-              <h2 className="text-4xl font-bold mb-6 text-[#F97100]">
+              <h2 className="text-4xl font-happyMonkey font-bold mb-6 text-[#F97100]">
                 Meet Our Founder
               </h2>
               <h3 className="text-2xl font-semibold mb-4">Bukola Ayinde</h3>
@@ -321,12 +328,12 @@ function App() {
 
           {/* Achievements Section */}
           <div className="mt-16">
-            <h3 className="text-3xl font-bold text-center mb-10 text-gray-800">
+            <h3 className="text-3xl font-happyMonkey font-bold text-center mb-10 text-gray-800">
               Notable Achievements
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-xl shadow-lg border border-green-100">
-                <h4 className="font-semibold text-[#F97100] mb-3">
+                <h4 className="font-semibold text-[#F97100] mb-3 font-happyMonkey">
                   Breaking Barriers Project
                 </h4>
                 <p className="text-gray-700">
@@ -336,7 +343,7 @@ function App() {
                 </p>
               </div>
               <div className="bg-white p-6 rounded-xl shadow-lg border border-green-100">
-                <h4 className="font-semibold text-[#F97100] mb-3">
+                <h4 className="font-semibold text-[#F97100] mb-3 font-happyMonkey">
                   Visual Storytelling
                 </h4>
                 <p className="text-gray-700">
@@ -346,7 +353,7 @@ function App() {
                 </p>
               </div>
               <div className="bg-white p-6 rounded-xl shadow-lg border border-green-100">
-                <h4 className="font-semibold text-[#F97100] mb-3">
+                <h4 className="font-semibold text-[#F97100] mb-3 font-happyMonkey">
                   Advocacy Work
                 </h4>
                 <p className="text-gray-700">
@@ -359,7 +366,7 @@ function App() {
         </div>
       </div>
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12 text-[#F97100]">
+        <h2 className="text-4xl font-happyMonkey font-bold text-center mb-12 text-[#F97100]">
           What People Say About Our Founder
         </h2>
         <FounderReview />
@@ -370,7 +377,7 @@ function App() {
       {/* Testimonials */}
       <section className="py-16 bg-gray-100 text-center">
         <div className="max-w-screen-xl mx-auto">
-          <h2 className="text-3xl font-bold text-green-700 mb-8">
+          <h2 className="text-3xl font-happyMonkey font-bold text-green-700 mb-8">
             What Our Participants Say
           </h2>
           <TestimonialCarousel />
@@ -411,28 +418,28 @@ function App() {
        {/* Event Details */}
        <div className="bg-[#F97100] py-16 text-white reveal">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">
+          <h2 className="text-3xl font-happyMonkey font-bold text-center mb-12">
             Event Details
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
               <Calendar className="w-12 h-12 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Date</h3>
+              <h3 className="text-xl font-bold mb-2 font-happyMonkey">Date</h3>
               <p>4th & 5th, 11th & 12th April, 2025</p>
             </div>
             <div className="text-center">
               <Clock className="w-12 h-12 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Time</h3>
+              <h3 className="text-xl font-bold mb-2 font-happyMonkey">Time</h3>
               <p>7pm – 9:30pm</p>
             </div>
             <div className="text-center">
-              <BookOpen className="w-12 h-12 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Venue</h3>
+              <BookOpen className="w-12 h-12 mx-auto mb-4 " />
+              <h3 className="text-xl font-bold mb-2 font-happyMonkey">Venue</h3>
               <p>Virtual event</p>
             </div>
             <div className="text-center">
-              <Star className="w-12 h-12 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Investment</h3>
+              <Star className="w-12 h-12 mx-auto mb-4 " />
+              <h3 className="text-xl font-bold mb-2 font-happyMonkey">Investment</h3>
               <p>N50,000 / $50 per participant</p>
             </div>
           </div>
@@ -441,7 +448,7 @@ function App() {
       <div className="bg-gray-900 text-white py-12 reveal">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8">Get in Touch</h2>
+            <h2 className="text-3xl font-bold font-happyMonkey mb-8">Get in Touch</h2>
             <div className="flex flex-col gap-y-6 sm:flex-row items-center justify-center space-x-8 mb-6">
               <div className="flex items-center">
                 <Mail className="w-6 h-6 mr-2" />
@@ -457,10 +464,10 @@ function App() {
                 <a href="https://wa.me/+2347046468669 ">0704 646 8669 (WhatsApp msg only)</a>
               </div>
             </div>
-            <button className="bg-[#F97100] hover:bg-[#e66700] text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors">
+            <button className="bg-[#F97100] font-happyMonkey hover:bg-[#e66700] text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors">
               Enroll Now
             </button>
-            <p className="mt-8 text-lg">
+            <p className="mt-8 font-happyMonkey text-lg">
               💙 Take the first step toward your emotional healing and
               well-being. You deserve it! 💙
             </p>
@@ -468,6 +475,7 @@ function App() {
         </div>
       </div>
     </div>
+    </ BrowserRouter>
   );
 }
 

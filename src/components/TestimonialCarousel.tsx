@@ -59,7 +59,7 @@ const TestimonialCarousel = () => {
         <div className='px-8 md-px-10'>
         <div key={index} className="bg-white p-6 rounded-lg shadow-md max-w-sm mb-10 h-48">
           <p className="text-gray-700 italic">{testimonial.text}</p>
-          <h4 className="text-orange-500 mt-4 font-semibold">{testimonial.author}</h4>
+          <h4 className="text-orange-500 mt-4 font-semibold font-happyMonkey">{testimonial.author}</h4>
         </div>
         </div>
       ))}

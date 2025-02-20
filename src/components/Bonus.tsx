@@ -6,7 +6,7 @@ const Bonus = () => {
   return (
     <div>
          <section className="py-16 px-8 md-px-10 bg-white">
-        <h2 className="text-3xl font-bold text-center text-green-700 mb-8">
+        <h2 className="text-3xl font-happyMonkey font-bold text-center text-green-700 mb-8">
           Bonus Sessions & Exclusive Resources!
         </h2>
         <div className="max-w-screen-xl mx-auto ">
@@ -17,7 +17,7 @@ const Bonus = () => {
                 <Globe />
                 </div>
               </div>
-              <h3 className="py-4 text-2xl font-semibold text-gray-700 sm:text-xl text-gray-700">
+              <h3 className="py-4 font-happyMonkey text-2xl font-semibold text-gray-700 sm:text-xl text-gray-700">
                 Website Design
               </h3>
               <p className="py-4 text-gray-700 text-md ">
@@ -31,7 +31,7 @@ const Bonus = () => {
                 <Notebook />
                 </div>
               </div>
-              <h3 className="py-4 text-2xl font-semibold text-gray-700 sm:text-xl ">
+              <h3 className="py-4 font-happyMonkey text-2xl font-semibold text-gray-700 sm:text-xl ">
                 Branding
               </h3>
               <p className="py-4 text-gray-700 text-md ">
@@ -45,7 +45,7 @@ const Bonus = () => {
                 <Store />
                 </div>
               </div>
-              <h3 className="py-4 text-2xl font-semibold sm:text-xl text-gray-700">
+              <h3 className="py-4 font-happyMonkey text-2xl font-semibold sm:text-xl text-gray-700">
                 SEO Marketing
               </h3>
               <p className="py-4 text-gray-700 text-md ">
