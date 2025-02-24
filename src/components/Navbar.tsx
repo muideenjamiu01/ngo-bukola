@@ -22,16 +22,16 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <button
+        {/* <button
           className="md:hidden text-gray-700"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
+        </button> */}
       </div>
 
       {/* Mobile Menu */}
-      {isOpen && (
+      {/* {isOpen && (
         <div className="md:hidden bg-white shadow-md">
           <Link
             to="/about"
@@ -48,7 +48,7 @@ const Navbar = () => {
             Contact Us
           </Link>
         </div>
-      )}
+      )} */}
     </nav>
   );
 };

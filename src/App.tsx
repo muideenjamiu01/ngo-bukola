@@ -110,20 +110,20 @@ function App() {
        
         <div className="absolute inset-0 flex items-center justify-center text-white">
        
-          <div className="text-center px-4 max-w-4xl animate-fade-in mt-10 md:mt-0">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+          <div className="text-center px-4 max-w-4xl animate-fade-in mt-20 md:mt-0">
+            <h1 className="text-2xl md:text-6xl font-bold mb-6">
               Thrive & Flourish: Emotional and Mental Well-being for Special
               Needs Parents
             </h1>
             <p className="text-xl font-happyMonkey md:text-2xl mb-6 text-[#F97100] font-semibold">
               Because You Deserve to Thrive, Not Just Survive!
             </p>
-            <p className="text-lg mb-8">
+            <p className="text-base md:text-lg mb-8">
               Parenting a child with special needs can be overwhelming,
               exhausting, and emotionally draining. You love your child, but who
               takes care of YOU?
             </p>
-            <button className="bg-[#F97100] font-happyMonkey  hover:bg-[#e66700] text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors animate-scale-in">
+            <button className="bg-[#F97100] font-happyMonkey  hover:bg-[#e66700] text-white px-4 py-2 md:px-8 md:py-4 rounded-full text-sm md:text-lg font-semibold transition-colors animate-scale-in">
               Register Now - Limited Slots Available!
             </button>
           </div>
@@ -149,7 +149,7 @@ function App() {
             </motion.div>
           </div>
           <div className="md:w-1/2 mt-8 md:mt-0 px-4 md:px-0">
-            <h2 className="text-3xl font-happyMonkey font-bold text-center md:text-left mb-8 text-gray-800">
+            <h2 className="text-2xl md;text-4xl  font-happyMonkey font-bold text-center md:text-left mb-8 text-gray-800">
               Do you often feel:
             </h2>
             <div className="flex gap-x-4 items-center mb-4">
@@ -199,7 +199,7 @@ function App() {
       {/* Modules */}
       <div className="py-20 bg-white reveal">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-happyMonkey font-bold text-center mb-12 text-[#F97100]">
+          <h2 className="text-2xl md;text-4xl font-happyMonkey font-bold text-center mb-12 text-[#F97100]">
             What You'll Learn in This Transformational Program
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -241,6 +241,84 @@ function App() {
           </div>
         </div>
       </div>
+
+      {/* What You’ll Gain and What You Stand to Lose */}
+<div className="py-20 bg-green-50 reveal">
+  <div className="container mx-auto px-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      {/* What You’ll Gain */}
+      <div className="bg-white p-8 rounded-xl shadow-lg">
+        <h2 className="text-3xl font-happyMonkey font-bold mb-6 text-[#F97100]">
+          What You’ll Gain from This Training Program
+        </h2>
+        <p className="text-lg mb-6">
+          By the end of this program, you will:
+        </p>
+        <ul className="space-y-4 text-gray-700">
+          <li className="flex items-start">
+            <Check className="w-6 h-6 text-green-500 flex-shrink-0 mt-1 mr-2" />
+            <span>Feel emotionally balanced and less overwhelmed</span>
+          </li>
+          <li className="flex items-start">
+            <Check className="w-6 h-6 text-green-500 flex-shrink-0 mt-1 mr-2" />
+            <span>Learn how to manage stress and prevent burnout</span>
+          </li>
+          <li className="flex items-start">
+            <Check className="w-6 h-6 text-green-500 flex-shrink-0 mt-1 mr-2" />
+            <span>Develop a resilient mindset to handle challenges with confidence</span>
+          </li>
+          <li className="flex items-start">
+            <Check className="w-6 h-6 text-green-500 flex-shrink-0 mt-1 mr-2" />
+            <span>Create a self-care routine that fits your busy life</span>
+          </li>
+          <li className="flex items-start">
+            <Check className="w-6 h-6 text-green-500 flex-shrink-0 mt-1 mr-2" />
+            <span>Find a supportive community that understands your journey</span>
+          </li>
+          <li className="flex items-start">
+            <Check className="w-6 h-6 text-green-500 flex-shrink-0 mt-1 mr-2" />
+            <span>Shift from just surviving to truly thriving as a special needs parent</span>
+          </li>
+        </ul>
+      </div>
+
+      {/* What You Stand to Lose */}
+      <div className="bg-white p-8 rounded-xl shadow-lg">
+        <h2 className="text-2xl md:text-4xl  font-happyMonkey font-bold mb-6 text-[#F97100]">
+          What You Stand to Lose If You Don’t Attend
+        </h2>
+        <p className="text-base md:text-lg mb-6">
+          If you don’t take action now, you risk:
+        </p>
+        <ul className="space-y-4 text-gray-700">
+          <li className="flex items-start">
+            <span className="text-red-500 font-bold mr-2">❌</span>
+            <span>Continued stress, exhaustion, and emotional burnout</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-red-500 font-bold mr-2">❌</span>
+            <span>Struggling with guilt, frustration, and feeling alone</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-red-500 font-bold mr-2">❌</span>
+            <span>Lack of practical coping strategies for daily challenges</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-red-500 font-bold mr-2">❌</span>
+            <span>Missing out on expert guidance and a support system</span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-red-500 font-bold mr-2">❌</span>
+            <span>Staying stuck in survival mode instead of thriving</span>
+          </li>
+        </ul>
+        <p className="mt-6 text-lg font-semibold text-[#F97100]">
+          Don’t wait until burnout takes over—take this step towards emotional well-being today!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
       {/* Meet the Founder */}
       <div className="py-20 bg-white reveal">
