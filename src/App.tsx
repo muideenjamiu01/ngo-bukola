@@ -488,7 +488,7 @@ function App() {
           </div>
         </section>
 
-        <Bonus />
+        {/* <Bonus /> */}
 
         {/* <div className="py-20 bg-green-50 reveal">
         <div className="container mx-auto px-4">
